@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Dashboard</title>
+    <author>Colton Egbert</author>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Daily Dashboard</h1>
+        </header>
+
+        <main>
+            <section class="weather-section card">
+                <h2>Today's Weather</h2>
+                <div id="weather" class="content-placeholder">Loading weather...</div>
+            </section>
+
+            <section class="quote-section card">
+                <h2>Motivational Quote</h2>
+                <p id="quote" class="content-placeholder">Loading quote...</p>
+            </section>
+
+            <section class="task-section card">
+                <h2>Your Tasks</h2>
+                <ul id="task-list" class="content-placeholder">No tasks yet...</ul>
+                <div class="task-input">
+                    <input type="text" id="new-task" placeholder="New task...">
+                    <button id="add-task">Add Task</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Daily Dashboard | Made by Colton Egbert</p>
+        </footer>
+    </div>
+
+    <script type="module" src="./js/weather.mjs"></script>
+    <script type="module" src="./js/quotes.mjs"></script>
+    <script type="module" src="./js/tasks.mjs"></script>
+</body>
+</html>
