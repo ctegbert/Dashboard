@@ -78,20 +78,30 @@ h1 {
 }
 
 /* Task Section */
+/* Task Section */
 .task-section ul {
     list-style: none;
-    margin-bottom: 20px;
-    padding-left: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .task-section li {
-    background-color: #f7f7f7;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    margin-bottom: 10px; /* Ensure spacing between tasks */
+    border-radius: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    color: #333;
+    width: 100%; /* Ensures full-width alignment */
+}
+
+.task-section ul {
+    display: block; /* Ensure the tasks stack vertically */
 }
 
 .task-input {
@@ -143,4 +153,70 @@ footer p {
     .task-input input {
         font-size: 0.9em;
     }
+}
+
+/* Task Section */
+.task-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.task-section li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    color: #333;
+}
+
+.task-section li button {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.2s;
+}
+
+.task-section li button:hover {
+    background-color: #ff4b4b;
+}
+
+.task-input {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.task-input input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.task-input button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: background-color 0.2s;
+}
+
+.task-input button:hover {
+    background-color: #0056b3;
 }
