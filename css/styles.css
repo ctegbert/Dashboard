@@ -260,3 +260,87 @@ footer p {
         width: 100%;
     }
 }
+
+/* Flip Card Container */
+.card {
+    perspective: 1000px;
+    position: relative;
+}
+
+.card-inner {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Front and Back Faces */
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 8px;
+}
+
+.card-back {
+    background-color: #007BFF;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.task-input button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+#new-quote {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #00c4ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-size: 1em;
+}
+
+#new-quote:hover {
+    background-color: #009cb3;
+    transform: scale(1.05);
+}
+
+#refresh-weather {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+#refresh-weather:hover {
+    background-color: #0056b3;
+}
+
+#clear-tasks {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+#clear-tasks:hover {
+    background-color: #ff4b4b;
+}

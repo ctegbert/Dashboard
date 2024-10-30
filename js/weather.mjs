@@ -1,4 +1,3 @@
-// weather.mjs
 
 async function fetchWeather() {
     try {
@@ -33,3 +32,5 @@ async function fetchWeather() {
 }
 
 fetchWeather();
+
+document.getElementById("refresh-weather").addEventListener("click", fetchWeather);

@@ -17,4 +17,8 @@ async function fetchQuote() {
     }
 }
 
+
 fetchQuote();
+
+
+document.getElementById("new-quote").addEventListener("click", fetchQuote);

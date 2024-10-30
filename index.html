@@ -17,11 +17,14 @@
             <section class="weather-section card">
                 <h2>Today's Weather</h2>
                 <div id="weather" class="content-placeholder">Loading weather...</div>
+                <button id="refresh-weather">Refresh Weather</button>
             </section>
+            
 
             <section class="quote-section card">
                 <h2>Motivational Quote</h2>
                 <p id="quote" class="content-placeholder">Loading quote...</p>
+                <button id="new-quote">Get New Quote</button>
             </section>
 
             <section class="task-section card">
@@ -31,12 +34,15 @@
                     <input type="text" id="new-task" placeholder="New task...">
                     <button id="add-task">Add Task</button>
                 </div>
+                <button id="clear-tasks">Clear All Tasks</button>
             </section>
+            
         </main>
 
         <footer>
-            <p>&copy; 2024 Daily Dashboard | Made by Colton Egbert</p>
+            <p id="footer-text">&copy; 2024 Daily Dashboard | Made by Colton Egbert</p>
         </footer>
+        
     </div>
 
     <script type="module" src="./js/weather.mjs"></script>
